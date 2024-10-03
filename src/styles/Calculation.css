@@ -1,0 +1,101 @@
+/* prodavlivanie-8da240/src/styles/Calculation.css */
+
+.calculation-container {
+    display: flex;
+    flex-direction: column; /* Меняем направление флекс-контейнера на колонку */
+    align-items: center;
+    justify-content: flex-start; /* Выравниваем контент по верху */
+    padding: 20px;
+    height: 100vh;
+}
+
+.calculation-content {
+    width: 100%;
+    max-width: 800px; /* Ограничиваем ширину текста */
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box; /* Учитываем padding при расчёте ширины */
+}
+
+.calculation-svg {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.top-panel {
+    display: flex;
+    justify-content: flex-start; /* Кнопки выровнены влево */
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0; /* Цвет фона панели */
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Добавляем линию внизу панели */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Лёгкая тень для отделения */
+}
+
+.nav-btn {
+    margin-right: 15px; /* Расстояние между кнопками */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+}
+
+.calculation-svg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Дополнительные стили для формы и элементов */
+fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+input[type="number"],
+select {
+    margin-left: 10px;
+    padding: 5px;
+    width: 100px;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
